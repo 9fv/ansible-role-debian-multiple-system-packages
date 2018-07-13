@@ -4,7 +4,8 @@ galaxy_info:
   description: Add or remove one or several system packages on Debian
   min_ansible_version: 2.5
   license: MIT
-  issue_tracker_url: https://github.com/9fv/ansible-role-debian-multiple-system-packages/issues
+  issue_tracker_url: >
+    https://github.com/9fv/ansible-role-debian-multiple-system-packages/issues
 
   platforms:
     - name: Debian

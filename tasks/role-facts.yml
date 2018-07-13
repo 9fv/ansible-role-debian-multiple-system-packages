@@ -1,9 +1,9 @@
 ---
 - name: Set role facts
   set_fact:
-    settings: "{{ role_debian_multiple_system_packages.settings }}"
-    packages_to_add: "{{ role_debian_multiple_system_packages.packages.add }}"
-    packages_to_remove: "{{ role_debian_multiple_system_packages.packages.remove }}"
+    settings: "{{ debian_multiple_system_packages.settings }}"
+    packages_to_add: "{{ debian_multiple_system_packages.packages.add }}"
+    packages_to_remove: "{{ debian_multiple_system_packages.packages.remove }}"
   tags: ["install", "configure"]
   when: testing.role_facts is defined
 
