@@ -2,6 +2,7 @@
 galaxy_info:
   author: 9 Février
   description: Add or remove one or several system packages on Debian.
+  version: 0.1.1
   min_ansible_version: 2.5
   license: MIT
   issue_tracker_url: >
