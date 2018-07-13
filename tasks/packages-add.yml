@@ -1,0 +1,9 @@
+---
+- name: Ensure required system packages are installed
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ packages_to_add }}"
+  when: packages_to_add
+  tags: ["add", "packages", "install"]

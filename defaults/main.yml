@@ -1,0 +1,10 @@
+---
+role_debian_multiple_system_packages:
+  packages:
+    add: []
+    remove: []
+  settings:
+    apt:
+      upgrade: true
+      update_cache: true
+      cache_valid_time: 86400

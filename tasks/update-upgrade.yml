@@ -1,0 +1,10 @@
+---
+- name: Update and upgrade apt packages
+  apt:
+    upgrade: "{{ settings.apt.upgrade }}"
+    update_cache: "{{ settings.apt.update_cache }}"
+    cache_valid_time: "{{ settings.apt.cache_valid_time }}"
+  when:
+    - _os_dist in ['Debian', 'Ubuntu']
+    - testing.update_upgrade is defined
+  tags: ["update", "upgrade", "repository", "packages"]

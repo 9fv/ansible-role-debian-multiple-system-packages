@@ -1,0 +1,9 @@
+---
+- name: Remove system packages
+  package:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - "{{ packages_to_remove }}"
+  when: packages_to_add is defined
+  tags: ["remove", "packages"]
