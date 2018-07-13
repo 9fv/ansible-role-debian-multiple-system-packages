@@ -1,5 +1,5 @@
 ---
-debian_multiple_system_packages:
+role_debian_system_packages_helper:
   packages:
     add: []
     remove: []

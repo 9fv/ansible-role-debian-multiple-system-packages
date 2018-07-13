@@ -2,4 +2,13 @@
 - name: Converge
   hosts: all
   roles:
-    - role: debian-multiple-system-packages
+    - role: debian-system-packages-helper
+      role_debian_system_packages_helper:
+        packages:
+          add: [git, zip, net-tools]
+          remove: []
+        settings:
+          apt:
+            upgrade: true
+            update_cache: true
+            cache_valid_time: 86400

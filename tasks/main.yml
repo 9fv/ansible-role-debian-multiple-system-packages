@@ -2,3 +2,5 @@
 - import_tasks: distribution-facts.yml
 - import_tasks: role-facts.yml
 - import_tasks: update-upgrade.yml
+- import_tasks: packages-add.yml
+- import_tasks: packages-remove.yml

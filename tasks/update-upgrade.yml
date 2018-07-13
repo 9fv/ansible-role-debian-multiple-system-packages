@@ -6,5 +6,4 @@
     cache_valid_time: "{{ settings.apt.cache_valid_time }}"
   when:
     - _os_dist in ['Debian', 'Ubuntu']
-    - testing.update_upgrade is defined
   tags: ["update", "upgrade", "repository", "packages"]

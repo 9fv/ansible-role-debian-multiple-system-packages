@@ -1,9 +1,10 @@
 ---
 - name: Remove system packages
-  package:
+  apt:
     name: "{{ item }}"
     state: absent
+    force: true
+    force_apt_get: true
   with_items:
     - "{{ packages_to_remove }}"
-  when: packages_to_add is defined
   tags: ["remove", "packages"]

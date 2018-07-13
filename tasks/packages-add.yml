@@ -1,9 +1,10 @@
 ---
 - name: Ensure required system packages are installed
-  package:
+  apt:
     name: "{{ item }}"
     state: present
+    force: true
+    force_apt_get: true
   with_items:
     - "{{ packages_to_add }}"
-  when: packages_to_add
   tags: ["add", "packages", "install"]
