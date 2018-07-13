@@ -2,7 +2,7 @@
 galaxy_info:
   author: 9 Février
   description: Add or remove one or several system packages on Debian.
-  version: 0.1.1
+  version: 0.1.2
   min_ansible_version: 2.5
   license: MIT
   issue_tracker_url: >
@@ -14,6 +14,6 @@ galaxy_info:
         - etch
         - jessie
         - stretch
-  galaxy_tags: [linux, system, packages, helper, 9fv-io]
+  galaxy_tags: [linux, system, packages, helper]
 
 dependencies: []
